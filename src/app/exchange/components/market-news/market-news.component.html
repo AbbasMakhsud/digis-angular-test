@@ -1,0 +1,12 @@
+<div class="market-news mt15">
+  <h2 class="heading">Market News</h2>
+  <ul>
+    <li *ngFor="let data of newsData">
+    <a href="#">
+      <strong>{{data.title}}</strong>
+      {{data.description}}
+      <span>{{data.publishedAt}}</span>
+    </a>
+  </li>
+  </ul>
+</div>

@@ -1,0 +1,16 @@
+<div (click)="$event.preventDefault()" *ngIf="marketPairsData">
+  <tabset>
+<!--    <tab heading="Static title">Static content</tab>-->
+    <tab *ngFor="let tabz of marketPairsData"
+         [heading]="tabz.title"
+         [active]="tabz.active"
+         (selectTab)="tabz.active = true"
+         (deselect)="tabz.active = false"
+         [customClass]="tabz.customClass">
+     <app-table
+      [tableTitles]="['Pairs', 'Last Price', 'Change']"
+      [tableData]="tabz.pairs"
+     ></app-table>
+    </tab>
+  </tabset>
+</div>

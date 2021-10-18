@@ -1,0 +1,42 @@
+<header class="light-bb">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a routerlink="/" class="navbar-brand" href="/">
+      <img src="../../../assets/img/logo-dark.svg" alt="" class="darkMode">
+      <img src="../../../assets/img/logo-light.svg" alt="" class="lightMode">
+    </a>
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div   id="headerNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a [routerLink]="['/exchange']" class="nav-link active">Exchange</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/markets']" class="nav-link">Markets</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      <li  class="nav-item dropdown header-img-icon">
+      <a  href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">
+      <img  src="https://e7.pngegg.com/pngimages/934/797/png-clipart-computer-icons-user-profile-avatar-avatar-heroes-monochrome.png"
+            alt="avatar" class="header-avatar-image" width="40">
+      </a>
+      <ul  aria-labelledby="navbarDropdown5" class="dropdown-menu dropdown-menu-end">
+    <a  routerlink="profile" href="/profile">
+    <div  class="dropdown-header d-flex flex-column align-items-center">
+    <div  class="figure mb-3">
+    <img  src="../../../assets/img/avatar.svg" alt="">
+  </div>
+    <div  class="info text-center">
+    <p  class="name font-weight-bold mb-0">Tony Stark</p>
+    <p  class="email text-muted mb-3">tonystark@gmail.com</p>
+  </div>
+  </div>
+  </a>
+  </ul>
+  </li>
+  </ul>
+  </div>
+  </nav>
+</header>
