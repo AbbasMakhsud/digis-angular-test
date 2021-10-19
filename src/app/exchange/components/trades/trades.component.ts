@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TradesBottom, TradesTop} from "../../../entities/tradesData";
 
 @Component({
   selector: 'app-trades',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class TradesComponent implements OnInit {
 
   constructor() { }
+
+  topTrades = TradesTop;
+  topBottom = TradesBottom;
 
   ngOnInit(): void {
   }

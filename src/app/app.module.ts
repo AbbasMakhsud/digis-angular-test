@@ -13,6 +13,7 @@ import { MarketNewsComponent } from './exchange/components/market-news/market-ne
 import { OrdersComponent } from './exchange/components/orders/orders.component';
 import {TabsModule} from "ngx-bootstrap/tabs";
 import { TableComponent } from './table/table.component';
+import {ChartsModule} from "ng2-charts";
 
 
 const routes: Routes = [
@@ -47,7 +48,8 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(routes),
-    TabsModule
+    TabsModule,
+    ChartsModule
   ],
   exports : [
     TableComponent

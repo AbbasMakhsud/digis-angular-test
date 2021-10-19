@@ -9,6 +9,9 @@ export class OrdersComponent implements OnInit {
 
   constructor() { }
 
+  orderTitles = [
+    'Open Orders', 'Closed Orders', 'Order History', 'Balance'
+  ];
   ngOnInit(): void {
   }
 

@@ -1,7 +1,5 @@
 <div class="trades mb15">
   <h2 class="heading">Order Book</h2>
-  <app-table [tableTitles]="['Price(BTC)', 'Amount(ETH)', 'Total(ETH)']"></app-table>
-  <app-table [tableTitles]="['Last Price', 'USD', 'Change']"></app-table>
+  <app-table [tableTitles]="['Price(BTC)', 'Amount(ETH)', 'Total(ETH)']" [tableData]="topTrades"></app-table>
+  <app-table [tableTitles]="['Last Price', 'USD', 'Change']" [tableData]="topBottom"></app-table>
 </div>
-
-
